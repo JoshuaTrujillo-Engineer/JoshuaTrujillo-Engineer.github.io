@@ -9,19 +9,46 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <style>
+    .home-intro {
+      max-width: none;
+    }
+    .intro-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 280px;
+      align-items: center;
+      gap: 48px;
+    }
+    .intro-text {
+      min-width: 0;
+    }
+    .home-intro h1 {
+      font-size: clamp(48px, 5.5vw, 76px);
+      letter-spacing: -2px;
+      overflow-wrap: break-word;
+    }
     .headshot {
       display: block;
-      width: 200px;
-      height: 200px;
+      width: 280px;
+      height: 280px;
       object-fit: cover;
       object-position: center 25%;
       border-radius: 50%;
-      margin: 24px 0 28px;
+      margin: 0;
+      justify-self: end;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
+      .intro-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
       .headshot {
-        width: 160px;
-        height: 160px;
+        grid-row: 1;
+        width: 180px;
+        height: 180px;
+        justify-self: start;
+      }
+      .home-intro h1 {
+        font-size: clamp(42px, 8vw, 64px);
       }
     }
   </style>
@@ -45,21 +72,24 @@
 
   <main id="main" class="wrap">
     <section class="home-intro">
-      <div class="eyebrow">
-        About me · Mechanical engineering · Class of 2027
+      <div class="intro-layout">
+        <div class="intro-text">
+          <div class="eyebrow">
+            About me · Mechanical engineering · Class of 2027
+          </div>
+          <h1>Hi, I’m<br><em>Joshua Trujillo.</em></h1>
+          <p class="home-lead">
+            A mechanical engineering student who enjoys turning ideas
+            into working systems.
+          </p>
+        </div>
+
+        <img class="headshot"
+             src="assets/Headshot_JoshuaTrujillo.jpg"
+             alt="Joshua Trujillo"
+             width="280"
+             height="280">
       </div>
-
-      <img class="headshot"
-           src="assets/Headshot_JoshuaTrujillo.jpg"
-           alt="Joshua Trujillo"
-           width="200"
-           height="200">
-
-      <h1>Hi, I’m<br><em>Joshua Trujillo.</em></h1>
-      <p class="home-lead">
-        A mechanical engineering student who enjoys turning ideas
-        into working systems.
-      </p>
 
       <div class="home-bio">
         <p>
