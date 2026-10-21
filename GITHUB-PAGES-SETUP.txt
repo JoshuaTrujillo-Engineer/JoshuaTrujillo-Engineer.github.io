@@ -1,0 +1,9 @@
+FREE GITHUB PAGES SETUP
+1. Create a free GitHub account.
+2. Create a public repository named YOURUSERNAME.github.io.
+3. Extract this ZIP. Upload all HTML files, style.css, script.js, favicon.svg, the PDF, and the assets folder into the repository root. Keep the images in assets.
+4. Under Settings > Pages, select Deploy from a branch, main, and / (root), then Save.
+5. Once deployment finishes, visit https://YOURUSERNAME.github.io and test in a signed-out browser.
+6. Paste that URL into job applications.
+
+No paid domain or subscription is required for GitHub Pages public-repository hosting. The source and assets in your repository will be public.
