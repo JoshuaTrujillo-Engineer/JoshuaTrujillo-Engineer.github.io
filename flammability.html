@@ -1,1 +1,180 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Flammability test apparatus | Joshua Trujillo</title><meta name="description" content="Joshua Trujillo’s mechanical engineering portfolio: wind tunnel development, flammability test apparatus, RC vehicle optimization, and battle bot design."><meta name="theme-color" content="#304b3d"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><a class="skip" href="#main">Skip to content</a><header><nav class="wrap nav" aria-label="Main navigation"><a class="brand" href="index.html">Joshua Trujillo<span> / ME</span></a><div class="navlinks"><a href="index.html">About Me</a><a href="projects.html" aria-current="page">Projects</a><a href="Joshua-Trujillo-Engineering-Portfolio.pdf" target="_blank" rel="noopener">Portfolio PDF ↗</a></div></nav></header><main id="main" class="wrap project-detail"><section class="project-intro"><a class="back-link" href="projects.html">← All projects</a><div class="project-title-row"><div><div class="eyebrow">Project 02 · May 2026 – Present</div><h1>Flammability test apparatus</h1><p class="project-summary">Designed an insulated flammability chamber around ASTM E681 specifications, combining temperature control, gas handling, and pressure monitoring.</p></div></div><figure class="project-main-image"><button class="zoom" data-image="assets/p4-1.jpeg" data-caption="Flammability test apparatus" aria-label="Enlarge Flammability test apparatus image"><img src="assets/p4-1.jpeg" alt="Flammability test apparatus — overall assembly"></button><figcaption>Overall assembly · Click to enlarge ↗</figcaption></figure></section><section class="case" id="flammability"><div class="case-top"><div><div class="eyebrow">/02 — Thermal & control systems</div><h2>Design & contributions</h2><p class="case-intro">Mechanical design meets instrumentation and control.</p><div class="facts"><div class="fact"><small>Control</small><strong>MAX31856 + solid-state relay</strong></div><div class="fact"><small>Manifold</small><strong>Four gas / vacuum / pressure lines</strong></div></div><div class="tags"><span>Thermal design</span><span>Instrumentation</span><span>System integration</span></div></div><div class="contributions"><h3>Chamber design</h3><p>Designed an insulated chamber for ASTM E681 flammability-limit testing, incorporating an explosion-relief vent.</p><h3>Temperature control</h3><p>Built a thermocouple-based, closed-loop temperature control system using a MAX31856 and solid-state relay, with an electrical safety interlock chain.</p><h3>Gas & pressure monitoring</h3><p>Designed a four-line gas, vacuum, and pressure manifold to enable real-time pressure monitoring during filling and evacuation, departing from the standard single-line approach.</p></div></div></section><nav class="project-pagination" aria-label="Project navigation"><a class="btn" href="projects.html">← All projects</a><a class="btn primary" href="rc-car.html">Next: RC car performance development →</a></nav></main><footer><div class="wrap"><span>Joshua Trujillo · Mechanical Engineering</span><span>Portfolio source: August 2026</span></div></footer><dialog aria-label="Enlarged project image"><button aria-label="Close image">Close ×</button><img alt=""></dialog><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flammability test apparatus | Joshua Trujillo</title>
+  <meta name="description" content="Joshua Trujillo’s ASTM E681 flammability test apparatus project, featuring chamber design, Raspberry Pi heating controls, and gas-pressure monitoring.">
+  <meta name="theme-color" content="#304b3d">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .heating-section {
+      margin-top: 50px;
+      padding-top: 35px;
+      border-top: 1px solid #d5dbd0;
+    }
+    .heating-section > p {
+      color: #63705d;
+      line-height: 1.7;
+    }
+    .heating-photo {
+      display: block;
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain;
+      margin: 24px auto 0;
+      border-radius: 8px;
+    }
+    .heating-caption {
+      text-align: center;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        Joshua Trujillo<span> / ME</span>
+      </a>
+      <div class="navlinks">
+        <a href="index.html">About Me</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="Joshua-Trujillo-Engineering-Portfolio.pdf"
+           target="_blank" rel="noopener">Portfolio PDF ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap project-detail">
+    <section class="project-intro">
+      <a class="back-link" href="projects.html">← All projects</a>
+      <div class="project-title-row">
+        <div>
+          <div class="eyebrow">Project 02 · May 2026 – Present</div>
+          <h1>Flammability test apparatus</h1>
+          <p class="project-summary">
+            Designed an insulated flammability chamber around ASTM E681
+            specifications, combining temperature control, gas handling,
+            and pressure monitoring. The apparatus is currently under
+            development.
+          </p>
+        </div>
+      </div>
+
+      <figure class="project-main-image">
+        <button class="zoom"
+                data-image="assets/p4-1.jpeg"
+                data-caption="Flammability test apparatus CAD assembly"
+                aria-label="Enlarge flammability test apparatus CAD assembly">
+          <img src="assets/p4-1.jpeg"
+               alt="CAD model of the flammability test apparatus">
+        </button>
+        <figcaption>CAD assembly · Click to enlarge ↗</figcaption>
+      </figure>
+    </section>
+
+    <section class="case" id="flammability">
+      <div class="case-top">
+        <div>
+          <div class="eyebrow">/02 — Thermal &amp; control systems</div>
+          <h2>Design &amp; contributions</h2>
+          <p class="case-intro">
+            Mechanical design meets instrumentation and control.
+          </p>
+
+          <div class="facts">
+            <div class="fact">
+              <small>Control</small>
+              <strong>Raspberry Pi 4 + Python + SSR</strong>
+            </div>
+            <div class="fact">
+              <small>Manifold</small>
+              <strong>Four gas / vacuum / pressure lines</strong>
+            </div>
+          </div>
+
+          <div class="tags">
+            <span>Thermal design</span>
+            <span>Python</span>
+            <span>Raspberry Pi</span>
+            <span>Instrumentation</span>
+            <span>System integration</span>
+          </div>
+        </div>
+
+        <div class="contributions">
+          <h3>Chamber design</h3>
+          <p>
+            Designed an insulated chamber for ASTM E681 flammability-limit
+            testing, incorporating an explosion-relief vent.
+          </p>
+
+          <h3>Temperature control</h3>
+          <p>
+            Developing a thermocouple-feedback heating system using Python
+            on a Raspberry Pi 4, a solid-state relay, and an emergency
+            shutoff switch. Responsible for component selection, wiring,
+            assembly, and programming.
+          </p>
+
+          <h3>Gas &amp; pressure monitoring</h3>
+          <p>
+            Designed a four-line gas, vacuum, and pressure manifold to
+            enable real-time pressure monitoring during filling and
+            evacuation, departing from the standard single-line approach.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="heating-section" aria-labelledby="heating-heading">
+      <div class="eyebrow">Hardware &amp; programming</div>
+      <h2 id="heating-heading">Heating &amp; Temperature Control</h2>
+      <p>
+        Designed and assembled the heating control system, selected the
+        components, and wrote the Python control logic on a Raspberry Pi 4.
+        Thermocouple feedback allows the Pi to switch a solid-state relay
+        (SSR) on and off around a target temperature, controlling AC power
+        to the heat guns. Integrated an emergency shutoff switch.
+        The system is currently under development.
+      </p>
+
+      <figure>
+        <img class="heating-photo"
+             src="assets/heating_system.jpg"
+             alt="Heating control system for the ASTM E681 test apparatus"
+             loading="lazy">
+        <figcaption class="heating-caption">
+          Heating-system hardware and control setup.
+        </figcaption>
+      </figure>
+    </section>
+
+    <nav class="project-pagination" aria-label="Project navigation">
+      <a class="btn" href="projects.html">← All projects</a>
+      <a class="btn primary" href="rc-car.html">
+        Next: RC car performance development →
+      </a>
+    </nav>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Joshua Trujillo · Mechanical Engineering</span>
+      <span>Engineering Portfolio</span>
+    </div>
+  </footer>
+
+  <dialog aria-label="Enlarged project image">
+    <button aria-label="Close image">Close ×</button>
+    <img alt="">
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
